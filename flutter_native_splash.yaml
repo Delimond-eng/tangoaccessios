@@ -1,0 +1,15 @@
+flutter_native_splash:
+  # GLOBAL
+  color: "#FFFFFF"
+  image: assets/images/tango.png
+
+  # ANDROID
+  android: true
+
+  # IOS
+  ios: true
+  ios_content_mode: center
+  fullscreen: false
+
+  # Optionnel (recommandé iOS)
+  color_dark: "#FFFFFF"

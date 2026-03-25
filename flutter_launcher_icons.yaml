@@ -1,0 +1,14 @@
+flutter_launcher_icons:
+  image_path: "assets/images/tango.png"
+
+  # ANDROID
+  android: true
+  min_sdk_android: 21
+
+  # IOS
+  ios: true
+  remove_alpha_ios: true  # important pour éviter les erreurs App Store
+  # image_path_ios: "assets/images/tango_ios.png" # optionnel si tu veux une image différente
+
+  # Optionnel (iOS uniquement)
+  # background_color_ios: "#ffffff @Xv-Lio@2026.@"
