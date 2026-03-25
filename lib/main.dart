@@ -50,7 +50,7 @@ class _MyAppState extends State<MyApp> {
     _startupFuture = _initApp();
   }
 
-  Future<Widget> _initApp() async {
+  /*Future<Widget> _initApp() async {
     try {
       await authController.refreshUser();
       if (authController.user.value != null) {
@@ -67,7 +67,11 @@ class _MyAppState extends State<MyApp> {
       }
     }
     return const Login();
-  }
+  }*/
+  Future<Widget> _initApp() async {
+  await Future.delayed(const Duration(seconds: 1));
+  return const Login();
+ }
 
   @override
   Widget build(BuildContext context) {
