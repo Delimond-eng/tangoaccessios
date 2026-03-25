@@ -1,22 +1,4 @@
-import 'package:flutter/material.dart';
-
-void main() {
-  runApp(const MyApp());
-}
-
-class MyApp extends StatelessWidget {
-  const MyApp({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return const MaterialApp(
-      home: Scaffold(
-        body: Center(child: Text("APP OK")),
-      ),
-    );
-  }
-}
-/*import 'package:flutter/foundation.dart';
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_easyloading/flutter_easyloading.dart';
 import 'package:get/get.dart';
@@ -68,7 +50,7 @@ class _MyAppState extends State<MyApp> {
     _startupFuture = _initApp();
   }
 
-  /*Future<Widget> _initApp() async {
+  Future<Widget> _initApp() async {
     try {
       await authController.refreshUser();
       if (authController.user.value != null) {
@@ -85,11 +67,7 @@ class _MyAppState extends State<MyApp> {
       }
     }
     return const Login();
-  }*/
-  Future<Widget> _initApp() async {
-  await Future.delayed(const Duration(seconds: 1));
-  return const Login();
- }
+  }
 
   @override
   Widget build(BuildContext context) {
